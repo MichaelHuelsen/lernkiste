@@ -1,0 +1,7 @@
+node_modules
+dist
+.metals
+build.sh
+deploy.sh
+ToDo.md
+.DS_Store

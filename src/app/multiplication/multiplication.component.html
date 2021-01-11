@@ -1,0 +1,18 @@
+<div>
+  <br>
+  <span class="my-text">Aufgabe {{this.currentTask}}: &nbsp; &nbsp; {{this.a}}
+    &middot; {{this.b}} = {{this.result}}
+  </span>
+  <br> <br>
+  <button (click)="checkResult()" class="my-btn" style="margin-right: 10px;">Ergebnis überprüfen!</button>
+  <button (click)="nextOnePlease()" class="my-btn">Andere Aufgabe</button>
+  <br><br>
+  <span class="my-text">Richtige Antworten: {{this.correctAnswers}} /
+    {{this.tasksPerLevel}}</span>
+  <br> <br>
+  <span class="my-text">Dein Level: {{this.playerLevel}}</span>
+  <br><br>
+  <span class="my-small-text">
+    Mit fünf richtigen Aufgaben in einem Block steigert sich dein Level!
+  </span>
+</div>
