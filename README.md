@@ -4,6 +4,8 @@
 purposes.
 It starts with the "kleine Einmaleins"...
 
+Visit [Lernkiste](https://lernkiste.michael-huelsen.de) on my homepage.
+
 ## Build the project
 
 Run the npm package installer:
