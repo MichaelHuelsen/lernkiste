@@ -184,6 +184,12 @@
   }
 </style>
 
+<nav>
+  <ul>
+    <li><a routerLink="/multiplication" routerLinkActive="active">multiplication</a></li>
+    <li><a routerLink="/addition" routerLinkActive="active">addition</a></li>
+  </ul>
+</nav>
 
 <div class="content" role="main">
   <h1>{{ title }}</h1>
@@ -204,18 +210,8 @@
     <app-numpad-button [btnLabel]="0"></app-numpad-button>
     <app-numpad-button [btnLabel]="'C'" [btnId]="'clear'"></app-numpad-button>
   </div>
-  <app-multiplication></app-multiplication>
-  <app-version></app-version>
 </div>
-
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
 
 
 <router-outlet></router-outlet>
+<app-version></app-version>
