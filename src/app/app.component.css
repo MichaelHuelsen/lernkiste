@@ -1,0 +1,19 @@
+
+.navbar {
+  float:left;
+}
+
+.float-content{
+  float:left;
+  overflow: auto;
+}
+
+.float-content::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.no-float{
+  float:none;
+}

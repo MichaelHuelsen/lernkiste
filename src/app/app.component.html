@@ -184,7 +184,8 @@
   }
 </style>
 
-<nav>
+<app-version></app-version>
+<nav class="navbar">
   <ul>
     <li>
       <a routerLink="/multiplication" routerLinkActive="active">Das kleine
@@ -195,11 +196,10 @@
   </ul>
 </nav>
 
-<div class="content" role="main">
+<div class="content float-content" role="main">
   <h1>{{ title }}</h1>
-
+  <router-outlet></router-outlet>
 </div>
-
-
-<router-outlet></router-outlet>
-<app-version></app-version>
+<div style="text-align:center">
+  <app-version></app-version>
+</div>
