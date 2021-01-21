@@ -5,6 +5,7 @@ import { ErrorComponent } from './error/error.component';
 import { MultiplicationComponent } from './multiplication/multiplication.component';
 
 const routes: Routes = [
+  { path: '', component: MultiplicationComponent },
   { path: 'multiplication', component: MultiplicationComponent },
   { path: 'addition', component: AdditionComponent },
   { path: '**', component: ErrorComponent },  // Wildcard route for a 404 page

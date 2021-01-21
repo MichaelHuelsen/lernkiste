@@ -53,7 +53,7 @@
 
   .content {
     display: flex;
-    margin: 30px auto 32px;
+    margin: 10px auto 10px;
     padding: 0 16px;
     max-width: 960px;
     flex-direction: column;
@@ -186,30 +186,18 @@
 
 <nav>
   <ul>
-    <li><a routerLink="/multiplication" routerLinkActive="active">multiplication</a></li>
-    <li><a routerLink="/addition" routerLinkActive="active">addition</a></li>
+    <li>
+      <a routerLink="/multiplication" routerLinkActive="active">Das kleine
+        Einmaleins</a>
+    </li>
+    <li><a routerLink="/addition" routerLinkActive="active">Addieren im
+        Zahlenraum bis 100</a></li>
   </ul>
 </nav>
 
 <div class="content" role="main">
   <h1>{{ title }}</h1>
-  <div>
-    <app-numpad-button [btnLabel]="7"></app-numpad-button>
-    <app-numpad-button [btnLabel]="8"></app-numpad-button>
-    <app-numpad-button [btnLabel]="9"></app-numpad-button>
-    <br>
-    <app-numpad-button [btnLabel]="4"></app-numpad-button>
-    <app-numpad-button [btnLabel]="5"></app-numpad-button>
-    <app-numpad-button [btnLabel]="6"></app-numpad-button>
-    <br>
-    <app-numpad-button [btnLabel]="1"></app-numpad-button>
-    <app-numpad-button [btnLabel]="2"></app-numpad-button>
-    <app-numpad-button [btnLabel]="3"></app-numpad-button>
-    <br>
-    <app-numpad-button [btnLabel]="'&#60;'" [btnId]="'back'"></app-numpad-button>
-    <app-numpad-button [btnLabel]="0"></app-numpad-button>
-    <app-numpad-button [btnLabel]="'C'" [btnId]="'clear'"></app-numpad-button>
-  </div>
+
 </div>
 
 

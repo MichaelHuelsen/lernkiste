@@ -8,6 +8,7 @@ import { SendkeyService } from '../services/sendkey.service';
 })
 export class MultiplicationComponent implements OnInit {
 
+  componentTitle: string = "Das kleine Einmaleins";
   a: number;
   b: number;
   result: string;
@@ -28,6 +29,7 @@ export class MultiplicationComponent implements OnInit {
   constructor(private sendkeyService: SendkeyService) {
     this.min = 1;
     this.max = 10;
+    this.currentTask = 1;
     this.playerLevel = 1;
     this.getNewNumbers();
   }
@@ -52,6 +54,7 @@ export class MultiplicationComponent implements OnInit {
     this.correctAnswers = 0;
     this.incorrectAnswers = 0;
     this.currentTask = 1;
+    this.getNewNumbers();
   }
 
   levelUp(): void {
@@ -75,13 +78,14 @@ export class MultiplicationComponent implements OnInit {
       this.message = "KORREKT";
       this.correctAnswers += 1;
       this.getNewNumbers();
+      this.checkLevel();
     }
     else {
       this.incorrectAnswers += 1;
       this.message = "FALSCH";
+      this.resetLevel();
     }
     console.log(this.message)
-    this.checkLevel();
   }
 
   modifyResultInput(i: string) {

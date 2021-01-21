@@ -9,6 +9,7 @@ import { NumpadButtonComponent } from './numpad-button/numpad-button.component';
 import { VersionComponent } from './version/version.component';
 import { AdditionComponent } from './addition/addition.component';
 import { ErrorComponent } from './error/error.component';
+import { NumpadComponent } from './numpad/numpad.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { ErrorComponent } from './error/error.component';
     VersionComponent,
     AdditionComponent,
     ErrorComponent,
+    NumpadComponent,
   ],
   imports: [
     BrowserModule,

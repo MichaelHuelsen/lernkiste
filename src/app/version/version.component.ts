@@ -9,7 +9,7 @@ export class VersionComponent implements OnInit {
 
   constructor() { }
 
-  appVersion: string = "0.1";
+  appVersion: string = "0.2";
   sourceCode: string = "https://github.com/michaelhuelsen/lernkiste";
 
   ngOnInit(): void {
